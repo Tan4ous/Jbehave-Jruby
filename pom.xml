@@ -10,21 +10,21 @@
   <properties>
     <jbehave.core.version>3.8</jbehave.core.version>
     <jbehave.site.version>3.1.1</jbehave.site.version>
+    <jruby.version>1.6.7.2</jruby.version>
+    <jruby.generated.sources>${project.build.directory}/generated-sources/jruby</jruby.generated.sources>
     <embeddables>**/*Stories.java</embeddables>
   </properties>
 
   <dependencies>
+      <dependency>
+          <groupId>org.jruby</groupId>
+          <artifactId>jruby-complete</artifactId>
+          <version>${jruby.version}</version>
+      </dependency>
     <dependency>
       <groupId>org.jbehave</groupId>
       <artifactId>jbehave-core</artifactId>
       <version>${jbehave.core.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jbehave</groupId>
-      <artifactId>jbehave-core</artifactId>
-      <version>${jbehave.core.version}</version>
-      <classifier>resources</classifier>
-      <type>zip</type>
     </dependency>
     <dependency>
       <groupId>org.jbehave.site</groupId>
@@ -32,13 +32,23 @@
       <version>${jbehave.site.version}</version>
       <type>zip</type>
     </dependency>
+    <dependency>
+      <groupId>de.saumya.mojo</groupId>
+      <artifactId>jruby-maven-plugin</artifactId>
+      <version>0.29.1</version>
+    </dependency>
+
   </dependencies>
 
   <build>
     <resources>
       <resource>
+        <directory>src/main/ruby</directory>
+        <filtering>false</filtering>
+      </resource>
+      <resource>
         <directory>src/main/java</directory>
-        <filtering>true</filtering>
+        <filtering>false</filtering>
         <excludes>
           <exclude>**/*.java</exclude>
         </excludes>
@@ -51,6 +61,24 @@
     <pluginManagement>
       <plugins>
         <plugin>
+          <groupId>de.saumya.mojo</groupId>
+          <artifactId>jruby-maven-plugin</artifactId>
+          <version>0.29.1</version>
+          <executions>
+            <execution>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>compile</goal>
+              </goals>
+              <configuration>
+                <generateJava>true</generateJava>
+                <generatedJavaDirectory>${jruby.generated.sources}</generatedJavaDirectory>
+              </configuration>
+            </execution>
+
+          </executions>
+        </plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>2.1</version>
@@ -58,6 +86,24 @@
             <source>1.5</source>
             <target>1.5</target>
           </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>build-helper-maven-plugin</artifactId>
+          <version>1.7</version>
+          <executions>
+            <execution>
+              <phase>generate-sources</phase>
+                <goals>
+                  <goal>add-source</goal>
+                </goals>
+                <configuration>
+                  <sources>
+                    <source>${jruby.generated.sources}</source>
+                  </sources>
+                </configuration>
+            </execution>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>

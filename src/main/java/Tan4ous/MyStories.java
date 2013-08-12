@@ -65,9 +65,14 @@ public class MyStories extends JUnitStories {
             .useParameterConverters(parameterConverters);
     }
 
-    @Override
+   /* @Override
     public InjectableStepsFactory stepsFactory() {
         return new InstanceStepsFactory(configuration(), new MySteps());
+    }*/
+
+    @Override
+    public InjectableStepsFactory stepsFactory() {
+        return new InstanceStepsFactory(configuration(), new RubyClass());
     }
 
     @Override

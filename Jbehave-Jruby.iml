@@ -1,16 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="DBNavigator.Module.ConnectionManager">
+    <connections />
+  </component>
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
-    <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/ruby" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Maven: org.jruby:jruby-complete:1.6.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.jbehave:jbehave-core:3.8" level="project" />
     <orderEntry type="library" name="Maven: junit:junit-dep:4.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
@@ -25,6 +29,36 @@
     <orderEntry type="library" name="Maven: com.thoughtworks.xstream:xstream:1.4.4" level="project" />
     <orderEntry type="library" name="Maven: xmlpull:xmlpull:1.1.3.1" level="project" />
     <orderEntry type="library" name="Maven: xpp3:xpp3_min:1.1.4c" level="project" />
+    <orderEntry type="library" name="Maven: de.saumya.mojo:jruby-maven-plugin:0.29.1" level="project" />
+    <orderEntry type="library" name="Maven: de.saumya.mojo:ruby-tools:0.29.1" level="project" />
+    <orderEntry type="library" name="Maven: ant:ant:1.6.5" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-component-annotations:1.5.4" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-classworlds:2.2.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-archiver:1.2" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-container-default:1.0-alpha-9-stable-1" level="project" />
+    <orderEntry type="library" name="Maven: junit:junit:3.8.1" level="project" />
+    <orderEntry type="library" name="Maven: classworlds:classworlds:1.1-alpha-2" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-io:1.0.1" level="project" />
+    <orderEntry type="library" name="Maven: de.saumya.mojo:maven-tools:0.29.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-plugin-api:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-artifact:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-plexus:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-inject-bean:2.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.sisu:sisu-guice:no_aop:2.9.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-core:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-settings-builder:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.codehaus.plexus:plexus-interpolation:1.14" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-sec-dispatcher:1.3" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.plexus:plexus-cipher:1.4" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-repository-metadata:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-model-builder:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.maven:maven-aether-provider:3.0.3" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-api:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-spi:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-util:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.sonatype.aether:aether-impl:1.11" level="project" />
   </component>
   <component name="POM File Configuration" pomFile="" />
 </module>

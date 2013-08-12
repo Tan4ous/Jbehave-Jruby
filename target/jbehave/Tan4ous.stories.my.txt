@@ -1,0 +1,26 @@
+
+(Tan4ous/stories/my.story)
+Scenario: A scenario with some simple steps
+Given a date of 1 (PENDING)
+When 2 days pass (PENDING)
+Then the date is 3 (PENDING)
+@Given("a date of 1")
+@Pending
+public void givenADateOf1() {
+  // PENDING
+}
+
+@When("2 days pass")
+@Pending
+public void when2DaysPass() {
+  // PENDING
+}
+
+@Then("the date is 3")
+@Pending
+public void thenTheDateIs3() {
+  // PENDING
+}
+
+
+

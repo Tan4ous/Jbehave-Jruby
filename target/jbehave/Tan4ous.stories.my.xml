@@ -1,0 +1,25 @@
+<story path="Tan4ous/stories/my.story" title="">
+<scenario keyword="Scenario:" title="A scenario with some simple steps">
+<step outcome="pending" keyword="PENDING">Given a date of 1</step>
+<step outcome="pending" keyword="PENDING">When 2 days pass</step>
+<step outcome="pending" keyword="PENDING">Then the date is 3</step>
+<pendingMethod>@Given(&quot;a date of 1&quot;)
+@Pending
+public void givenADateOf1() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@When(&quot;2 days pass&quot;)
+@Pending
+public void when2DaysPass() {
+  // PENDING
+}
+</pendingMethod>
+<pendingMethod>@Then(&quot;the date is 3&quot;)
+@Pending
+public void thenTheDateIs3() {
+  // PENDING
+}
+</pendingMethod>
+</scenario>
+</story>
