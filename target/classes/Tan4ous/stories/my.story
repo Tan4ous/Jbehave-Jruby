@@ -1,8 +1,8 @@
 
-Scenario: A scenario with some simple steps
+Scenario: We want to show how steps can be implemented in a class written in JRuby
 
-Given a date of 1
+Given a date of 10/16/2010
 When 2 days pass
-Then the date is 3
+Then the date is 10/18/2010
 
 

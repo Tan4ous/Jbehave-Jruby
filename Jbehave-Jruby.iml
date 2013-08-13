@@ -14,7 +14,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.jruby:jruby-complete:1.6.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby:jruby-complete:1.7.4" level="project" />
     <orderEntry type="library" name="Maven: org.jbehave:jbehave-core:3.8" level="project" />
     <orderEntry type="library" name="Maven: junit:junit-dep:4.8.2" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
@@ -59,6 +59,26 @@
     <orderEntry type="library" name="Maven: org.sonatype.aether:aether-spi:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.sonatype.aether:aether-util:1.11" level="project" />
     <orderEntry type="library" name="Maven: org.sonatype.aether:aether-impl:1.11" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby:jruby-core:1.7.0.RC1" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby:jruby-stdlib:1.7.0.RC1" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby.joni:joni:1.1.8" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby.jcodings:jcodings:1.0.9" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-netdb:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-ffi:0.7.7" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jffi:1.2.5" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: com.github.jnr:jffi:native:1.2.7" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-x86asm:1.0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-unixsocket:0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-constants:0.8.4" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-enxio:0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.github.jnr:jnr-posix:2.3.0" level="project" />
+    <orderEntry type="library" name="Maven: org.jruby.extras:bytelist:1.0.10" level="project" />
+    <orderEntry type="library" name="Maven: org.yaml:snakeyaml:1.10" level="project" />
+    <orderEntry type="library" name="Maven: jline:jline:2.7" level="project" />
+    <orderEntry type="library" name="Maven: joda-time:joda-time:2.1" level="project" />
+    <orderEntry type="library" name="Maven: com.jcraft:jzlib:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcmail-jdk15on:1.46" level="project" />
+    <orderEntry type="library" name="Maven: org.bouncycastle:bcprov-jdk15on:1.46" level="project" />
   </component>
   <component name="POM File Configuration" pomFile="" />
 </module>
